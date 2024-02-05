@@ -1,8 +1,6 @@
 package com.amarirestfull.shop.services;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+
 import java.net.URI;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -13,7 +11,7 @@ import com.amarirestfull.shop.domain.Customer;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-import jakarta.ws.rs.core.StreamingOutput;
+
 
 @Path("customer")
 public class CustomerResource {
