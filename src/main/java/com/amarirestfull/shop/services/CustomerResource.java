@@ -27,6 +27,7 @@ public class CustomerResource {
 	@Consumes(MediaType.APPLICATION_JSON)
 	@POST
 	public Response createCustomer(Customer customer) {
+		if(customer==null)System.out.println("null");
 		// Customer customer = OperationsCustomer.readCustomer(inputStream);
 		customer.setId(idCounter.incrementAndGet());
 		customerDB.put(customer.getId(), customer);
